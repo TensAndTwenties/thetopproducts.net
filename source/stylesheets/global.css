@@ -4,6 +4,9 @@ body{
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Poppins', sans-serif;
@@ -66,6 +69,12 @@ h1,h2,h3,h4,h5,h6{
 	text-shadow: 0 1px 3px rgba(36,180,126,.4);
 	margin-top: 20px;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	font-weight: 600;
+}
+#top-section .btn-success:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    background: #42de98;
 }
 #points-section{
 	margin-top: 210px;
@@ -97,6 +106,7 @@ blockquote{
 	margin-bottom: 0px;
 	font-size: 19px;
 	line-height: 29px;
+	min-height: 136px;
 }
 blockquote:after, blockquote:before {
     content: "";
@@ -124,6 +134,7 @@ blockquote:after {
 	background: #f6f9fc;
 	padding: 40px 0px 60px; 
 	margin: 50px 0px 60px; 
+	min-height: 236px;
 }
 #quotes-section p{
 	font-size: 19px;
@@ -175,6 +186,11 @@ blockquote:after {
 	margin-top: 20px;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
+#cta-section .btn-orange:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    background: #e58c48;
+}
 
 @media(max-width: 1050px){
 	#fireFly {
@@ -212,6 +228,7 @@ blockquote:after {
 	}
 	.logo-images{
 		margin-top: 0px; 
+		max-width: 50%;
 	}
 	#hand {
     position: relative;
@@ -223,6 +240,22 @@ blockquote:after {
 	}
 	#cta-section h1{
 		font-size: 20px; 
-
+	}
+	#slant-section{
+		height: 385px;
+	}
+}
+@media(max-width: 475px){
+		#slant-section{
+		height: 420px;
+	}
+	blockquote{
+		min-height: 225px;
+	}
+	.carousel-indicators li{
+		display: none;
+	}
+	#quotes-section{
+		min-height: 395px;
 	}
 }
