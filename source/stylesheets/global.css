@@ -27,9 +27,27 @@ h1,h2,h3,h4,h5,h6{
     height: 540px;
     width: 100%;
     background-image: linear-gradient(-240deg,#444cff 20%,rgba(25, 166, 255, 0.7));
+    background: radial-gradient(circle farthest-corner at right bottom,#ffd08a 0,#ffa376 28%,#d26578 52%,#682a84 79%,#241668 100%);
 }
+#slant-section-scent-bird{
+	overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-8deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    position: absolute;
+    z-index: -999;
+    height: 540px;
+    width: 100%;
+    background: radial-gradient(circle farthest-corner at right bottom,#ffd08a 0,#ffa376 28%,#d26578 52%,#682a84 79%,#241668 100%);
+}
+
 #top-section{
 	color: white;
+}
+#top-section #slant-paragraph{
+	color:white;
 }
 #top-section h1{
 	font-size: 42px;
@@ -60,6 +78,21 @@ h1,h2,h3,h4,h5,h6{
 	left: -195px;
 	top: 20px;
 }
+#woman {
+   position: relative;
+    width: 132%;
+    top: -30px;
+    left: -75px;
+}
+#scent-bird{
+	width: 500px;
+    position: absolute;
+    left: -140px;
+    top: -20px;
+}
+#scentbirdheader{
+	font-size: 28px;
+}
 #top-section .btn-success{
 	background: #3ecf8e;
 	border: none;
@@ -70,6 +103,22 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 20px;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	font-weight: 600;
+}
+#top-section .btn-scent{
+	border: none;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 12px 35px;
+	color: #87467c;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.25);
+	margin-top: 20px;
+	background: linear-gradient(-180deg,hsla(0,0%,100%,.95),hsla(0,0%,100%,.75));
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.12), inset 0 1px 0 0 hsla(0,0%,100%,.35);
+	font-weight: 600;
+}
+#top-section .btn-scent:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 #top-section .btn-success:hover{
     transform: translateY(-1px);
@@ -128,7 +177,7 @@ blockquote:after {
     right: -7px;
 }
 .logo-images{
-	margin-top: 20px; 
+	margin-top: 35px; 
 }
 #quotes-section{
 	background: #f6f9fc;
@@ -154,6 +203,9 @@ blockquote:after {
 	margin-bottom: 25px; 
 	margin-top: 25px;
 }
+#cta-section #scent-bird-cta{
+	font-size: 25px;
+}
 #cta-section{
 	background: #f6f9fc;
 	padding: 40px 0px;
@@ -164,6 +216,7 @@ blockquote:after {
 	margin: 0px;
 	font-size: 30px;
 }
+
 .carousel-indicators .active {
     background-color: #797979;
     height: 10px;
@@ -182,14 +235,49 @@ blockquote:after {
 	font-weight: 600;
 	letter-spacing: 1px;
 	padding: 16px 50px;
-	text-shadow: 0 1px 3px rgba(36,180,126,.4);
+	text-shadow: 0 1px 3px rgb(161, 92, 39);
 	margin-top: 20px;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
+#cta-section .btn-orange-scent{
+	background: #6772e5;
+	border: none;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 16px 50px;
+	margin-top: 20px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+#cta-section .btn-orange-scent:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    background: #7f8af8;
+}
+
+
 #cta-section .btn-orange:hover{
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
     background: #e58c48;
+}
+
+@media(max-width: 1200px){
+	#last-section p {
+    font-size: 16px;
+	}
+	#scentbirdp {
+    margin-bottom: 80px;
+	}
+	#woman {
+    position: relative;
+    width: 120%;
+    top: 25px;
+    left: -75px;	
+}
+#scentbirdheader {
+    font-size: 26px;
+}
 }
 
 @media(max-width: 1050px){
@@ -214,11 +302,14 @@ blockquote:after {
 		margin-top: 50px;
 	}
 	#points-section {
-    margin-top: 100px;
+    margin-top: 210px;
 	}	
 	#last-section {
     font-size: 16px;
     line-height: 23px;
+}
+#quotes-section{
+	margin-bottom: 30px;
 }
 }
 @media(max-width: 776px){
@@ -236,7 +327,7 @@ blockquote:after {
     top: 20px;
 	}
 #cta-section{
-	margin-top: 20px; 
+	margin-top: -40px; 
 	}
 	#cta-section h1{
 		font-size: 20px; 
@@ -244,6 +335,15 @@ blockquote:after {
 	#slant-section{
 		height: 385px;
 	}
+	#woman{
+	width: 100%;
+    left: 0px;
+    top: -40px;
+}
+#cta-section #scent-bird-cta {
+	font-size: 17px;
+	line-height: 25px;
+}
 }
 @media(max-width: 475px){
 		#slant-section{
