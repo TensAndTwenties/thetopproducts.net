@@ -317,9 +317,19 @@ blockquote:after {
 		font-size: 26px;
 		margin-top: 35px;
 	}
+	.container{
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 	.logo-images{
 		margin-top: 0px; 
 		max-width: 50%;
+	}
+	#points-section {
+    margin-top: 180px;
+	}	
+	#quotes-section {
+    max-height: 345px;
 	}
 	#hand {
     position: relative;
@@ -356,6 +366,6 @@ blockquote:after {
 		display: none;
 	}
 	#quotes-section{
-		min-height: 395px;
+		min-height: 350px;
 	}
 }
